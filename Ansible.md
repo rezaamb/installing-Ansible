@@ -21,4 +21,9 @@ for installing with ```root``` user :
 ```bash
 ansible -m apt -a 'name=apache2 state=present' 192.168.1.1 --user reza -b -K
 ```
+then, ```cd /etc/ansible``` :
 
+```bash
+ansible-config init --disabled > ansible.cfg
+```
+and then go to ``` vim /etc/ansible/ansible.cfg```
